@@ -9,210 +9,213 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <div class="container-intro">
-        <nav>
-          <ul>
-            <li>IRFAN HADI</li>
-
-            <li>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.5882 3.66429C12.2376 3.40927 11.7625 3.40927 11.4119 3.66429L5.00007 8.32743V20C5.00007 20.5523 5.44779 21 6.00007 21H8.00007V15C8.00007 13.3432 9.34322 12 11.0001 12H13.0001C14.6569 12 16.0001 13.3432 16.0001 15V21H18.0001C18.5524 21 19.0001 20.5523 19.0001 20V8.32743L12.5882 3.66429ZM21.0001 9.78198L22.4119 10.8088C22.8586 11.1336 23.484 11.0349 23.8088 10.5882C24.1336 10.1415 24.0349 9.51613 23.5882 9.19129L13.7646 2.04681C12.7126 1.28176 11.2875 1.28176 10.2356 2.04681L0.411899 9.19129C-0.0347537 9.51613 -0.133504 10.1415 0.191334 10.5882C0.516173 11.0349 1.14159 11.1336 1.58824 10.8088L3.00007 9.78198V20C3.00007 21.6569 4.34322 23 6.00007 23H18.0001C19.6569 23 21.0001 21.6569 21.0001 20V9.78198ZM14.0001 21V15C14.0001 14.4477 13.5524 14 13.0001 14H11.0001C10.4478 14 10.0001 14.4477 10.0001 15V21H14.0001Z"
-                    fill="#D5FFD0"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="24" height="24" fill="white"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a class="logo">IRFAN HADI</a>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#intro-section">Home</a></li>
+            <li class="nav-item"><a href="#resume-section">Resume</a></li>
+            <li class="nav-item">
+              <a href="#portofolio-section">Portofolio</a>
             </li>
-
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="20"
-                height="26"
-                x="0"
-                y="0"
-                viewBox="0 0 24 24"
-                style="enable-background: new 0 0 512 512"
-                xml:space="preserve"
-                class=""
-              >
-                <g>
-                  <path
-                    d="M12 12a6 6 0 1 0-6-6 6.006 6.006 0 0 0 6 6Zm0-10a4 4 0 1 1-4 4 4 4 0 0 1 4-4ZM12 14a9.01 9.01 0 0 0-9 9 1 1 0 0 0 2 0 7 7 0 0 1 14 0 1 1 0 0 0 2 0 9.01 9.01 0 0 0-9-9Z"
-                    fill="#d5ffd0"
-                    opacity="1"
-                    data-original="#000000"
-                    class=""
-                  ></path>
-                </g>
-              </svg>
-            </li>
-
-            <li></li>
+            <li class="nav-item"><a href="#about-section">About</a></li>
           </ul>
-        </nav>
-
-        <div class="intro profile">
-          <img class="profile-photo" src="./assets/images/My_picture.jpg" />
         </div>
-        <div class="intro name"><h1>I'm Irfan</h1></div>
-        <div class="intro description">
-          <p>
-            Fresh graduate in Physics, passionate about Web Development. Skilled
-            in HTML, CSS, JavaScript, and React.js. Quick learner,
-            self-motivated, and excited to grow through real-world projects.
-          </p>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <main>
-      <article id="resume">
+      <article id="intro-section" class="intro">
+        <div class="container-intro">
+          <div class="intro-content">
+            <h1 class="intro-name">I'm Irfan</h1>
+            <p class="intro-description">
+              Fresh graduate in Physics, passionate about Web Development.
+              Skilled in HTML, CSS, JavaScript, and React.js. Quick learner,
+              self-motivated, and excited to grow through real-world projects.
+            </p>
+          </div>
+          <div class="intro-picture">
+            <img class="profile-photo" src="./assets/images/my-picture.jpg" />
+          </div>
+        </div>
+      </article>
+
+      <article id="resume-section" class="resume">
         <div class="container-resume">
           <h2 class="title">resume</h2>
 
-          <div class="resume-content">
-            <h3>education</h3>
-            <ul>
-              <li>
-                Bachelor of Physics - Sepuluh Nopember Institute of Technology
-                (2019-2024)
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume-content">
-            <h3>skills</h3>
-            <ul>
-              <li>Matlab Programing Language - Beginner</li>
-              <li>
-                Microsoft Office (Word, Excel, Power Point) - Intermediate
-              </li>
-              <li>Origin Lab - Beginner</li>
-              <li>Web development - Beginner</li>
-            </ul>
-          </div>
-
-          <div class="resume-content">
-            <h3>work experience</h3>
-            <ul>
-              <li>Electrospinning Laboratorium Assistant (2022-2023)</li>
-              <li>Tahfidzul Quran Program Mentor (2022-2023)</li>
-            </ul>
-          </div>
+          <ul class="resume-content">
+            <li class="resume-item">
+              <h3 class="resume-item-title">education</h3>
+              <ul class="resume-item-content">
+                <li>
+                  <p>
+                    Bachelor of Physics - Sepuluh Nopember Institute of
+                    Technology (2019-2024)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Mathematics and Natural Science - State Islamic Senior High
+                    School 2 Pontianak (2016-2019)
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="resume-item">
+              <h3 class="resume-item-title">skills</h3>
+              <ul class="resume-item-content">
+                <li><p>Matlab Programing Language - Beginner</p></li>
+                <li>
+                  <p>
+                    Microsoft Office (Word, Excel, Power Point) - Intermediate
+                  </p>
+                </li>
+                <li><p>Origin Lab - Beginner</p></li>
+                <li><p>Web Development - Beginner</p></li>
+                <li><p>Web Design - Beginner</p></li>
+                <li><p>Web Programming - Beginner</p></li>
+              </ul>
+            </li>
+            <li class="resume-item">
+              <h3 class="resume-item-title">work experience</h3>
+              <ul class="resume-item-content">
+                <li>
+                  <p>Electrospinning Laboratorium Assistant (2022-2023)</p>
+                </li>
+                <li><p>Private Quran Memorization Teacher (2022-2023)</p></li>
+                <li>
+                  <p>
+                    Private Mathematics and Physics Tutor for High School (2025
+                    - Present)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Private Mathematics Tutor for Elementary School (2025
+                    -Present)
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </article>
 
-      <article id="portofolio">
+      <article id="portofolio-section" class="portofolio">
         <div class="container-portofolio">
           <h2 class="title">my project</h2>
 
-          <div class="portofolio-content">
-            <h3>
-              <a href="./public/Birthday_Invitation.html">
-                birthday party invitation
-              </a>
-            </h3>
+          <ul class="portofolio-content">
+            <li
+              class="portofolio-item"
+              onclick="window.location.href='./public/birthday-invitation.html'"
+            >
+              <img
+                src="./assets/images/birthday-invitation.png"
+                alt="birthday invitation"
+              />
+              <div class="portofolio-item-content">
+                <h3 class="portofolio-item-title">birthday party invitation</h3>
+                <p>
+                  Welcome to my Birthday Invitation! You’re invited to join the
+                  celebration
+                </p>
+              </div>
+            </li>
 
-            <img
-              src="./assets/images/Birthday_invitation.png"
-              alt="html project1"
-              class="project images1"
-            />
-          </div>
+            <li
+              class="portofolio-item"
+              onclick="window.location.href='./public/movie-ranking.html'"
+            >
+              <img
+                src="./assets/images/movie-ranking.png"
+                alt="movie ranking"
+              />
 
-          <div class="portofolio-content">
-            <h3>
-              <a href="./public/Movie_rangking.html"> Favorite film ranking </a>
-            </h3>
+              <div class="portofolio-item-content">
+                <h3 class="portofolio-item-title">Favorite film ranking</h3>
+                <p>
+                  My personal list of favorite films, ranked from best to just
+                  awesome
+                </p>
+              </div>
+            </li>
 
-            <img
-              src="./assets/images/Movie_ranking.png"
-              alt="html project2"
-              class="project images2"
-            />
-          </div>
-
-          <div class="portofolio-content">
-            <h3>
-              <a href="./public/html_only_resume.html"> html only resume </a>
-            </h3>
-
-            <img
-              src="./assets/images/html_based_resume.png"
-              alt="html project3"
-              class="project images3"
-            />
-          </div>
+            <li
+              class="portofolio-item"
+              onclick="window.location.href='./public/htlm-only-resume.html'"
+            >
+              <img
+                src="./assets/images/html-only-resume.png"
+                alt="html only resume"
+              />
+              <div class="portofolio-item-content">
+                <h3 class="portofolio-item-title">html only resume</h3>
+                <p>
+                  Welcome to my personal resume website, built entirely with
+                  plain HTML.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </article>
 
-      <article id="about">
+      <article id="about-section" class="about">
         <div class="container-about">
           <h2 class="title">About</h2>
+          <ul class="about-content">
+            <li class="about-item">
+              <img src="./assets/images/dog-gaming.gif" />
 
-          <div class="about-content">
-            <img src="./assets/images/dog_gaming.gif" />
+              <div class="about-item-content">
+                <h3>Gaming</h3>
+                <p>
+                  I like playing mobile and PC games in my free time. War
+                  Thunder is one of my favorites because it’s fun, challenging,
+                  and full of action.
+                </p>
+              </div>
+            </li>
 
-            <h3>Gaming</h3>
-            <p>
-              I like playing mobile and PC games in my free time. War Thunder is
-              one of my favorites because it’s fun, challenging, and full of
-              action.
-            </p>
-          </div>
+            <li class="about-item">
+              <img
+                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzY4dnA0bmN4cm9ieDVidjA1Mmpucm5mMGphdDRmc25oamVuNnJndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QDjpIL6oNCVZ4qzGs7/giphy.gif"
+              />
 
-          <div class="about-content">
-            <img
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzY4dnA0bmN4cm9ieDVidjA1Mmpucm5mMGphdDRmc25oamVuNnJndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QDjpIL6oNCVZ4qzGs7/giphy.gif"
-            />
+              <div class="about-item-content">
+                <h3>Programming</h3>
+                <p>
+                  I'm learning to become a better programmer. Right now, I'm
+                  focused on web development and picking up Python to improve my
+                  coding skills. It's been a fun learning journey so far!
+                </p>
+              </div>
+            </li>
 
-            <h3>Programming</h3>
-            <p>
-              I'm learning to become a better programmer. Right now, I'm focused
-              on web development and picking up Python to improve my coding
-              skills. It's been a fun learning journey so far!
-            </p>
-          </div>
+            <li class="about-item">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4E22AQGnISGMydqMxg/feedshare-shrink_800/feedshare-shrink_800/0/1733172996344?e=2147483647&v=beta&t=RBJUW0VjfdDMMXUxNO4JBG39e_5KewHKiBoPyyQO4PI"
+              />
 
-          <div class="about-content">
-            <img
-              src="https://media.licdn.com/dms/image/v2/D4E22AQGnISGMydqMxg/feedshare-shrink_800/feedshare-shrink_800/0/1733172996344?e=2147483647&v=beta&t=RBJUW0VjfdDMMXUxNO4JBG39e_5KewHKiBoPyyQO4PI"
-            />
-
-            <h3>Duo's Friend</h3>
-            <p>
-              I've been using Duolingo for about a year to learn languages such
-              as English, Japanese, and Arabic. It's been a helpful way to
-              improve my language skills.
-            </p>
-          </div>
+              <div class="about-item-content">
+                <h3>Duo's Friend</h3>
+                <p>
+                  I've been using Duolingo for about a year to learn languages
+                  such as English, Japanese, and Arabic. It's been a helpful way
+                  to improve my language skills.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </article>
     </main>
@@ -226,14 +229,17 @@
             </a>
           </li>
           <li>
-            <a>Instagram</a>
+            <a href="https://www.instagram.com/irfan._.hadi/">Instagram</a>
           </li>
           <li>
-            <a>Website</a>
+            <a href="https://irfanhadiproject.github.io/personal-website/"
+              >Website</a
+            >
           </li>
         </ul>
         <p class="copyright">© Irfan Hadi</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
