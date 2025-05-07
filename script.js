@@ -2,13 +2,20 @@ window.onscroll = function () {
   stickHeader();
 };
 
-var header = document.querySelector('header'); // Pilih elemen header
-var sticky = header.offsetTop; // Dapatkan posisi awal dari header
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+
+var header = document.querySelector('header');
+var sticky = header.offsetTop;
 
 function stickHeader() {
   if (window.scrollY > sticky) {
-    header.classList.add('sticky'); // Tambahkan kelas sticky ketika scroll
+    header.classList.add('sticky');
   } else {
-    header.classList.remove('sticky'); // Hapus kelas sticky ketika kembali ke posisi awal
+    header.classList.remove('sticky');
   }
 }

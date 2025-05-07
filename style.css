@@ -65,9 +65,18 @@ li {
   display: flex;
   justify-content: center;
   background-color: #fcfeff;
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
   z-index: 999;
+  box-sizing: content-box;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-container {
@@ -86,19 +95,21 @@ li {
   line-height: 1.25;
   letter-spacing: 1.4px;
   flex: 0 0 auto;
+  width: 224px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 860px;
+  width: 730px;
 }
 
 .nav-item a {
   position: relative;
   text-decoration: none;
   margin: 10px;
+  color: #6c6e72;
 }
 
 .nav-item a::after {
@@ -168,6 +179,7 @@ li {
 .intro-picture {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 40%;
 }
 
@@ -390,26 +402,88 @@ footer a:hover {
   align-items: center;
 }
 
-@media (max-width: 900px) {
-  .container-resume {
-    display: flex;
+@media (max-width: 1024px) {
+  .container-intro,
+  .resume-content,
+  .portofolio-content,
+  .about-content {
     flex-direction: column;
   }
-  .container-portofolio {
-    display: flex;
-    flex-direction: column;
+
+  .menu-toggle {
+    display: block;
   }
-  .container-about {
-    display: flex;
+
+  .navigation {
+    display: none;
     flex-direction: column;
+    position: absolute;
+    background-color: #fcfeff;
+    top: 70px;
+    right: 0;
+    width: 150px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.281);
+    transition: all 0.3s ease;
   }
-  .portofolio-content img {
-    width: 80%;
-    height: 200px;
+
+  .logo {
+    width: 80vw;
+  }
+
+  .navigation.show {
+    display: flex;
+  }
+
+  .container-intro {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-picture {
+    justify-content: center;
+  }
+
+  .about-item {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .intro-description {
+    font-size: 0.875rem;
+  }
+
+  .resume-item,
+  .portofolio-item,
+  .about-item {
+    height: auto;
+  }
+
+  .resume-item {
+    width: 300px;
+  }
+
+  .portofolio-item,
+  .about-item {
+    width: 340px;
   }
 }
 
 @media (max-width: 370px) {
+  .resume-item {
+    width: 270px;
+  }
+
+  .portofolio-item,
+  .about-item {
+    width: 310px;
+  }
   .container-footer ul {
     flex-direction: column;
   }
