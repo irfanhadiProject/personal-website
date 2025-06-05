@@ -9,8 +9,8 @@ menuToggle.addEventListener('click', () => {
   navMenu.classList.toggle('show');
 });
 
-var header = document.querySelector('header');
-var sticky = header.offsetTop;
+const header = document.querySelector('header');
+const sticky = header.offsetTop;
 
 function stickHeader() {
   if (window.scrollY > sticky) {
